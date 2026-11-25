@@ -1,3 +1,3 @@
 export function validateRecipient(address) {
-  return address.includes('.')
+  return typeof address === 'string' && address.includes('@')
 }
